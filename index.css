@@ -1,0 +1,149 @@
+header {
+    background-color: #05e435;
+    height: 55px;
+    /* margin: 20px; */
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+header button,
+footer button {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.content {
+    margin-left: 10%;
+    margin-top: 85px;
+}
+
+h1 {
+ font-size: 50px;
+ letter-spacing: 0.5rem;
+ color: #6a6bb3;
+}
+
+h1 span {
+    color: red;
+}
+.para {
+    font-size: 30px;
+    color: #6a6bb3;
+}
+p span {
+    color: #05e435;
+}
+
+.launch_time {
+    display: flex;
+    font-size: 25px;
+    margin-bottom: 40px;
+    color: whitesmoke;
+}
+
+.launch_time div {
+    flex-basis: 100px;
+}
+.red {
+    background-color: red;
+    border-radius: 50%;
+    margin: 10px;
+    padding-bottom: 30px;
+    line-height: 0.5;
+    text-align: center;
+}
+
+.green {
+    background-color: green;
+    text-align: center;
+    border-radius: 50%;
+    margin: 10px;
+    padding-bottom: 30px;
+    line-height: 0.5;
+}
+.notify_msg {
+    color: black;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input {
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(194, 180, 180);
+    padding: 10px;
+}
+input::placeholder {
+    padding-left: 10px;
+}
+
+.learn_btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    color: rgb(187, 255, 0);
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rebeccapurple;
+}
+.rocket {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    animation:linear infinite rocket 2s ;
+}
+
+footer {
+    background-color: #05e435;
+    height: 55px;
+    /* margin: 20px; */
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+@keyframes rocket {
+    0% {
+        top: 1;
+    } 100% {
+        bottom: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    body {
+        /* display: block; */
+        margin: 0;
+    }
+    header button {
+        padding: 4px;
+        margin: 15px 5px;
+    }
+    .content {
+        margin-left: 4px;
+    }
+    h1 {
+         font-size: 30px;
+        letter-spacing: 0; 
+        text-align: center;
+    }
+    .para {
+        text-align: center;
+    } 
+    .launch_time {
+        display: flex;
+        /* margin-left: -30px; */
+        font-size: 15px;
+    } 
+    
+    .learn_btn {
+        margin-top: 10px;
+    }
+   
+}
